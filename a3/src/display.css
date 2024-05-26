@@ -1,0 +1,17 @@
+div#display{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    position: center;
+
+}
+
+div#display > canvas{
+    margin: 10px;
+
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    
+}
+
+

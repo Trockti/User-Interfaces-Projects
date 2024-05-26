@@ -1,0 +1,26 @@
+div#shapelist {
+  flex: 1 1 0;
+  flex-flow: row wrap;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  margin: 10px;
+  overflow: scroll;
+}
+div#shapelist > canvas {
+  margin: 10px;
+  flex: 0 0 auto;
+  width: 50px;
+  height: 50px;
+}
+div#shapelist > canvas:hover {
+  outline: 4px solid lightblue;
+}
+
+div#shapelist > canvas[clicked=true] {
+  outline: 1px solid blue;
+  outline-offset: 2px;
+}
+div#shapelist > canvas[border=true] {
+  border: 1px solid lightgrey;
+}

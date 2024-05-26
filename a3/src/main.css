@@ -1,0 +1,25 @@
+/* styles for main app container */
+
+div#app {
+  display: flex;
+  height: 100vh;
+  background-color: whitesmoke;
+
+}
+
+div#left {
+
+  display: flex;
+  flex: 2 ;
+  background-color: white;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+

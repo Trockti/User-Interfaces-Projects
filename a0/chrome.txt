@@ -1,0 +1,142 @@
+
+CS349 W24
+
+User Interfaces
+
+About
+Schedule
+Assignments
+Policies
+Support
+A0 Setup
+Web Apps
+Released Mon Jan 8
+
+Due Fri Jan 19 at 6 PM [ 1 mark ]
+
+NOTE: You must complete A0 before submitting any other assignment.
+
+Synopsis
+You’ll setup your development environment, test that it works, and submit proof that you have everything working. This includes: VS Code, Git with UWaterloo Gitlab, Node, npm, and Vite with a Vanilla Typescript project.
+
+Requirements and Grading
+Make sure you have read and understand the general course policies and general assignment policies.
+
+Required Steps and Files (1 mark)
+You must complete all items to receive 1 mark. When committing to git, always provide a one to three word informative message.
+
+Git and Gitlab
+Install the latest version of git (at least version 2.43.0). Verify your installation with git --version.
+
+Clone your CS 349 assignment repo from UWaterloo GitLab into a local folder (i.e. your local repo) where you’ll work on all your assignments. Change to your a0/ folder.
+
+Run git --version > git.txt to create a file with your Git version.
+
+Run git remote -v > gitlab.txt to create a file with your remote GitLab urls.
+
+Add git.txt and gitlab.txt to your local git stage, check the git status to make sure those two files are in staging, commit them to your local repo with a message (like "git"), then push to your remote repo.
+
+We'll refer to this standard git process as "add, commit, and push" in the steps below.
+
+VS Code
+Install the latest version of VS Code (at least version 1.85).
+
+Install the “Prettier” plug-in.
+
+Open your A0 folder in VS code (or just drag it onto VS Code), then save it as a workspace called “a0” in your A0 folder.
+
+Create a new file called vscode.txt.
+
+Search for "About" in the VS Code Command Palette and execute the "Help:About" command. Copy the contents of the About modal dialog into the vscode.txt file and save the file.
+
+Add, commit, and push vscode.txt and a0.code-workspace.
+
+In other assignments, you can submit your VS Code workspace file or you can add it to your gitignore.
+
+.gitignore
+Remove the existing .gitignore from the a0/ folder.
+
+Our student repo creation script adds .gitignore files in each local assignment folder. You can remove it when you set up each assignment.
+
+Create a .gitignore in the root of your assignments folder to ignore files for Node, React, MacOS, Windows, and Linux.
+
+Use the tool shown in lecture.
+
+Add, commit, and push .gitignore.
+
+Node.js
+Install the latest LTS version of Node (version 20.10.*). Verify your installation with node -v.
+
+Run node -v > node.txt to create a file with your Node version.
+
+Add, commit, and push node.txt.
+
+npm
+At least version 10.2./* of npm should have been installed with Node.js, verify that with npm -v.
+
+Run npm -v > npm.txt to create a file with your Node version.
+
+We’d like to know more about your system to help debug problems later. Run this command npx --yes systeminformation@latest info > system.txt in your a0 folder.
+
+If you’re not comfortable sending your system information, you can meet with a TA and answer a few questions about your system. In that case, just create a system.txt file with "will show in office hours" as the contents.
+
+Add, commit, and push npm.txt and system.txt.
+Chrome (or Chromium)
+Install or upgrade to the latest version of Chrome (at least version 120.0) or the equivalent Chromium browser.
+
+Open this local Chrome URL chrome://version, select everything on that page and copy it to a file called chrome.txt, save that file to your a0 folder. If you’re using another Chromium browser, find the version information and copy that.
+
+Add, commit, and push chrome.txt.
+
+Vite
+From your a0 directory, create a Vite project called hello-vite using the Vanilla TypeScript template.
+
+Follow the Vite instructions, change to the newly created hello-vite folder and run npm install.
+
+Start the Vite dev server with npm run dev. Open the local server URL in your Chrome browser and verify you see the “Vite + TypeScript” demo page with the button counter.
+
+Create a file called vite.html in your a0 folder.
+
+Open the Browser Dev Tools. Click on the "Elements" tab. Right click on the opening html tag (i.e. <html lang="en">) and choose "Copy/Copy Element". Paste into your vite.html file.
+
+Add, commit, and push vite.html and files in hello-vite folder.
+
+Check
+Your assignment folder and the a0 folder should look like this:
+
+├── a0
+│   ├── a0.code-workspace
+│   ├── chrome.txt
+│   ├── git.txt
+│   ├── gitlab.txt
+│   ├── hello-vite/ ← many files and folders in here
+│   ├── node.txt
+│   ├── npm.txt
+│   ├── system.txt
+│   ├── vite.html
+│   └── vscode.txt
+├── a1
+├── a2
+├── a3
+├── a4
+└── .gitignore
+Open the UWaterloo GitLab page for your remote assignment repo and verify all files are there.
+
+Create a “test” folder outside of your local assignments repo and clone your remote repo to that directory. Examine the directory to verify all the files are there.
+
+From a terminal open the hello-vite sub folder of your “test” folder. Run npm install then npm run dev and verify the Vite dev server runs and you can see that same “Vite + TypeScript” test page in your browser.
+
+You’re Done!
+
+Submission
+Submit your assignment to your personal CS 349 repository (if you followed the steps above correctly, then you've already done this).
+
+Ensure all required files are checked in (you already should have done this in the last few steps). It’s your responsibility to check your submission (e.g. by cloning it to a fresh directory and testing it like a marker will do).
+
+page last updated January 8, 2024
+
+©2024 Daniel Vogel
+
+Cheriton School of Computer Science, University of Waterloo
+
+Made with ❤ using Eleventy, Tailwind, and Alpine.js

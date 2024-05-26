@@ -1,0 +1,11 @@
+div#statusbar {
+  height: 50px;
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+div#statusbar > #selected {
+  margin-left: auto;
+}
